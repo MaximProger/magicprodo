@@ -136,8 +136,8 @@ body {
 
 // Area
 .area {
-  padding-top: 120px;
-  padding-bottom: 180px;
+  padding-top: 20px;
+  padding-bottom: 81px;
 }
 
 .area__wrapper {
@@ -145,6 +145,18 @@ body {
 }
 
 .area__img {
+}
+
+.area__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 120.9%;
+  color: #000000;
+  text-align: left;
+}
+
+.area__btn {
+  margin-top: 55px;
 }
 
 // Benefits
@@ -219,7 +231,7 @@ body {
 
 .advantages__item {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
   margin-bottom: 65px;
 
@@ -388,6 +400,7 @@ body {
 
   .advantages__item {
     flex-direction: column;
+    align-items: center;
   }
 
   .advantages__photo {
@@ -424,6 +437,11 @@ body {
   .contact__img {
     position: static;
     transform: none;
+
+    &.md {
+      display: block;
+      margin: 0 auto;
+    }
   }
 
   .form {
@@ -431,6 +449,16 @@ body {
     max-width: 100%;
     border: none;
     backdrop-filter: none;
+  }
+}
+
+@media (max-width: 1280px) {
+  .intro {
+    height: 700px;
+  }
+
+  .intro__btn {
+    margin-top: 370px;
   }
 }
 
@@ -460,6 +488,7 @@ body {
   .principle {
     background: url(../images/dest/principle--mobile.png) no-repeat center
       bottom;
+    background-size: cover;
     height: 1555px;
   }
 
@@ -497,7 +526,7 @@ body {
   }
 
   .area__box {
-    padding-top: 44px;
+    padding-top: 10px;
     text-align: left;
   }
 
@@ -557,5 +586,11 @@ body {
   .form__title {
     font-size: 36px;
     line-height: 50px;
+  }
+
+  .contact__img {
+    &.md {
+      width: 100%;
+    }
   }
 }
