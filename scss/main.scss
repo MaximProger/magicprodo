@@ -1,4 +1,5 @@
 @import "config";
+@import "specproject";
 
 body {
   // font-family: "Roboto";
@@ -12,6 +13,12 @@ body {
   position: relative;
   overflow-x: hidden;
   min-width: 320px;
+
+  &.specproject {
+    font-family: Avenir Next;
+    font-size: 18px;
+    line-height: 25px;
+  }
 }
 
 * {
@@ -37,6 +44,24 @@ body {
   }
 }
 
+.btn__pink {
+  background: #eb4e59;
+  border: 1px solid #eb4e59;
+  box-shadow: -1px 11px 33px rgba(235, 78, 89, 0.39);
+  border-radius: 71px;
+  padding: 18px 44px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: #ffffff;
+  transition: all 0.2s linear;
+
+  &:hover {
+    background: #cc3b44;
+    color: #fff;
+  }
+}
+
 .btn__center {
   display: flex;
   align-items: center;
@@ -46,6 +71,13 @@ body {
 // Header
 .header {
   &--main {
+  }
+
+  &--absolute {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
   }
 }
 
