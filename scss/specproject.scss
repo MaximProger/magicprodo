@@ -1295,6 +1295,14 @@
   .test__img__right {
     width: 100%;
   }
+
+  .marquiz__container_inline .marquiz__inline-frame {
+    display: block !important;
+  }
+
+  .marquiz__container_inline .marquiz__button {
+    display: none !important;
+  }
 }
 
 @media (max-width: $mobile-sm) {
