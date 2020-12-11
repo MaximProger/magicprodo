@@ -421,6 +421,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  &.no-xl {
+    display: none;
+  }
 }
 
 .results__item {
@@ -503,6 +507,10 @@
 
   &.slick-current {
     background: #eb4e59;
+  }
+
+  &.no-xl {
+    display: none;
   }
 }
 
@@ -972,6 +980,12 @@
 
   .offer__video__item {
     border-radius: 20px;
+  }
+
+  .results__slide {
+    &.md {
+      display: flex;
+    }
   }
 
   .results__item {

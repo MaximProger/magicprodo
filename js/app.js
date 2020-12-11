@@ -6,8 +6,8 @@ $(document).ready(function () {
   // Убирает маску и запускает видео
   $(".offer__video__mask").click(function () {
     $(this).fadeOut();
-    $(this).find(".offer__video").get(0).play();
-    $(this).find(".offer__video").attr("controls", "controls");
+    $(this).parent().find(".offer__video").get(0).play();
+    $(this).parent().find(".offer__video").attr("controls", "controls");
   });
 
   // Слайдер
